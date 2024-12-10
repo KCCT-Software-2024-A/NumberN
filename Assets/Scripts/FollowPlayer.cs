@@ -5,14 +5,13 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour
 {
     public Transform target;  // ターゲットへの参照
-    private Vector3 offset;  // 相対座標
+    [SerializeField] public Vector3 offset = new Vector3(0f,0f,0f);  // 相対座標
 
     void Start ()
     {
         // 自分自身とtargetとの相対座標を求める
-        offset = transform.position - target.position;
+        // offset = transform.position - target.position;
         // Y軸のオフセットを設定（例：Y軸を1だけ上げる）
-        offset.y = 1.0f;
     }
 
     void Update ()
