@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
+using Quaternion = UnityEngine.Quaternion;
+using Vector3 = UnityEngine.Vector3;
 
 public class MainPlayerController : MonoBehaviour
 {
     public float rotationSpeed = 90f; // 回転速度
     public float moveSpeed = 0.1f; // 移動速度
+    public float mouseSensitivity = 100f; // マウス感度
+    float xRotation = 0f; // X軸の回転角度
 
     void FixedUpdate ()
     {
@@ -24,5 +29,12 @@ public class MainPlayerController : MonoBehaviour
         
         // 前進・後退の移動
         transform.Translate(Vector3.forward * moveDirectionFB * moveSpeed);
+        
+       //  // Rotation
+       //  float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime; // マウスのX軸移動量
+       //
+       //  xRotation -= mouseX;
+       //  
+       // transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f); 
     }
 }
