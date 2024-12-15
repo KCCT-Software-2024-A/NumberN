@@ -8,25 +8,26 @@
     ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
-    "/Users/hayatann/.nuget/packages/": {}
+    "C:\\Users\\yoshida\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hayatann/Documents/NumberN/Assembly-CSharp.csproj",
+      "projectUniqueName": "D:\\Unity\\チュートリアル\\NumberN\\Assembly-CSharp.csproj",
       "projectName": "Assembly-CSharp",
-      "projectPath": "/Users/hayatann/Documents/NumberN/Assembly-CSharp.csproj",
-      "packagesPath": "/Users/hayatann/.nuget/packages/",
-      "outputPath": "/Users/hayatann/Documents/NumberN/Temp/obj/Debug/Assembly-CSharp/",
+      "projectPath": "D:\\Unity\\チュートリアル\\NumberN\\Assembly-CSharp.csproj",
+      "packagesPath": "C:\\Users\\yoshida\\.nuget\\packages\\",
+      "outputPath": "D:\\Unity\\チュートリアル\\NumberN\\Temp\\obj\\Debug\\Assembly-CSharp\\",
       "projectStyle": "PackageReference",
-      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
-        "/Users/hayatann/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\yoshida\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -43,7 +44,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -60,7 +61,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/Users/hayatann/.dotnet/sdk/9.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
