@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 149
+  controlID: 150
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 95
+  controlID: 104
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 96
+  controlID: 95
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -411,10 +411,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 4323}
-      m_SelectedIDs: cc680000
-      m_LastClickedID: 26828
-      m_ExpandedIDs: 48f0ffff4cf0ffff56f9ffff58f9ffffdefaffffec5c00000a5d00007a5e0000c25e000018600000c463000090640000bc6400003065000090660000f46800005a69000086690000186a0000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 06710000
+      m_LastClickedID: 0
+      m_ExpandedIDs: f8d9ffff30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -820,9 +820,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.7133968, y: 0.07574685, z: -6.6214795}
+    m_Target: {x: 0.87343097, y: -0.58745503, z: -1.8887438}
     speed: 2
-    m_Value: {x: -3.7133968, y: 0.07574685, z: -6.6214795}
+    m_Value: {x: 0.87343097, y: -0.58745503, z: -1.8887438}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -868,13 +868,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.04220652, y: -0.6618959, z: 0.037366327, w: 0.7474877}
+    m_Target: {x: 0.05594612, y: 0.12225592, z: -0.006905772, w: 0.99091}
     speed: 2
-    m_Value: {x: 0.04220606, y: -0.6618887, z: 0.03736592, w: 0.7474796}
+    m_Value: {x: 0.055924404, y: 0.12522642, z: -0.007073484, w: 0.9905255}
   m_Size:
-    m_Target: 2.163037
+    m_Target: 2.6955378
     speed: 2
-    m_Value: 2.163037
+    m_Value: 2.6955378
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1014,7 +1014,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Sci Fi Modular Pack/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1022,30 +1022,30 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Sci Fi Modular Pack/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "D:\\Unity\\\u30C1\u30E5\u30FC\u30C8\u30EA\u30A2\u30EB\\NumberN"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b6710000
-    m_LastClickedID: 29110
-    m_ExpandedIDs: 000000006c7000006e70000000ca9a3b
+    m_SelectedIDs: 42720000
+    m_LastClickedID: 29250
+    m_ExpandedIDs: 000000003c7100003e71000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Sci Fi Modular Pack
-      m_OriginalName: Sci Fi Modular Pack
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 28780
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -1059,7 +1059,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006c7000006e700000
+    m_ExpandedIDs: 000000003c7100003e710000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
