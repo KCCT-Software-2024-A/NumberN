@@ -64,10 +64,13 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.21f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\EnterAndExitController1.cs" />
     <Compile Include="Assets\Scripts\EnterAndExitController.cs" />
+    <Compile Include="Assets\Scripts\SceneSettings.cs" />
     <Compile Include="Assets\Scripts\MainPlayerController.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\SceneManagerScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
