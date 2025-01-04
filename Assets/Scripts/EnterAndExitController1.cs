@@ -4,117 +4,80 @@ using UnityEngine.SceneManagement;
 
 public class EnterAndExitController1 : MonoBehaviour
 {
-    // 出口にあるか入口にあるか
+    // 出口か入口かを判別するフラグ
     [SerializeField] public bool is_exit = false;
 
     // SceneManagerScriptの参照
     private SceneManagerScript sceneManagerScript;
-
-    // 進んだシーン数
-    private int scenesProgressed = 0;
-
+    
     // SceneSettingsの参照
     private SceneSettings sceneSettings;
 
     private void Start()
     {
-        // SceneManagerScriptがアタッチされたオブジェクトを探す
+        // SceneManagerScriptとSceneSettingsのインスタンスを取得
         sceneManagerScript = FindObjectOfType<SceneManagerScript>();
-
-        // SceneSettingsがアタッチされたオブジェクトを探す
         sceneSettings = FindObjectOfType<SceneSettings>();
+        Debug.Log("EnterAndExitController1 initialized.");
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        // プレイヤー以外の接触や必要コンポーネントの未設定時は処理を終了
+        if (!other.CompareTag("Player") || sceneManagerScript == null || sceneSettings == null)
         {
-            if (sceneManagerScript != null && sceneSettings != null)
+            Debug.LogWarning("Invalid trigger detected or missing components.");
+            return;
+        }
+
+        Debug.Log("Player entered trigger zone.");
+
+        // シーン進行カウントをインクリメント
+        SceneSettings.scenesProgressed++;
+        Debug.Log("Scenes progressed: " + SceneSettings.scenesProgressed);
+
+        // エンディングへ進む条件を満たしているか確認
+        if (SceneSettings.scenesProgressed >= sceneSettings.GetRequiredScenesToAdvance())
+        {
+            if ((is_exit && !sceneManagerScript.CheckAnomaly()) || (!is_exit && sceneManagerScript.CheckAnomaly()))
             {
-                // maxSceneIDとrequiredScenesToAdvanceをSceneSettingsから取得
-                int maxSceneID = sceneSettings.GetMaxSceneID();
-                int requiredScenesToAdvance = sceneSettings.GetRequiredScenesToAdvance();
-
-                // 進んだシーン数をカウント
-                scenesProgressed++;
-
-                // シーン進行カウントが所定回数に達したかどうかをチェック
-                if (scenesProgressed >= requiredScenesToAdvance)
-                {
-                    // エンディングに進む条件チェック
-                    if (is_exit && !sceneManagerScript.CheckAnomaly())
-                    {
-                        // 出口で異変がない場合、エンディングに進む
-                        SceneManager.LoadScene("EndingScene"); // エンディングシーンへ
-                        return;
-                    }
-                    else if (!is_exit && sceneManagerScript.CheckAnomaly())
-                    {
-                        // 入口で異変がある場合、エンディングに進む
-                        SceneManager.LoadScene("EndingScene"); // エンディングシーンへ
-                        return;
-                    }
-                }
-
-                // SceneManagerScriptからhasAnomalyの値を取得
-                bool hasAnomaly = sceneManagerScript.CheckAnomaly();
-
-                if (is_exit)
-                {
-                    // 出口で異変がある場合
-                    if (hasAnomaly)
-                    {
-                        // 異変がある場合、最初のシーンに戻る
-                        SceneManager.LoadScene("Scene_0");
-                        scenesProgressed = 0;  // カウントリセット
-                    }
-                    else
-                    {
-                        // 異変がない場合、ランダムに次のシーンを選ぶ
-                        GoToRandomScene(maxSceneID);
-                    }
-                }
-                else
-                {
-                    // 入口で異変がある場合
-                    if (hasAnomaly)
-                    {
-                        // 異変がある場合はランダムに次のシーンを選ぶ
-                        GoToRandomScene(maxSceneID);
-                    }
-                    else
-                    {
-                        // 異変がない場合、最初のシーンに戻る
-                        SceneManager.LoadScene("Scene_0");
-                        scenesProgressed = 0;  // 最初のシーンに戻った場合、カウントリセット
-                    }
-                }
+                Debug.Log("Advancing to EndingScene.");
+                SceneManager.LoadScene("EndingScene");
+                return;
             }
         }
-    }
 
-    // ランダムな次のシーンに進む
-    private void GoToRandomScene(int maxSceneID)
-    {
-        if (sceneManagerScript != null)
+        // 異変の有無を確認
+        bool hasAnomaly = sceneManagerScript.CheckAnomaly();
+        Debug.Log("Anomaly detected: " + hasAnomaly);
+
+        // 条件に基づきシーン遷移を制御
+        if ((is_exit && hasAnomaly) || (!is_exit && !hasAnomaly))
         {
-            // SceneManagerScriptからsceneIDを取得
-            int currentSceneID = sceneManagerScript.GetSceneID();
-            int nextSceneID;
-
-            do
-            {
-                // 現在のシーンID以外をランダムに選択
-                nextSceneID = UnityEngine.Random.Range(1, maxSceneID + 1);  // 0を省いてランダムに選択
-            } while (nextSceneID == currentSceneID);
-
-            // シーン名を取得してロード
-            string sceneName = "Scene_" + nextSceneID;  // 例: Scene_1, Scene_2, ...
-            SceneManager.LoadScene(sceneName);
+            int nextSceneID = (sceneManagerScript.GetSceneID() == 0) ? sceneSettings.GetRandomSceneID() : 0;
+            Debug.Log("Transitioning to Scene_" + nextSceneID);
+            SceneManager.LoadScene("Scene_" + nextSceneID);
+            SceneSettings.scenesProgressed = 0;
+        }
+        else
+        {
+            Debug.Log("Transitioning to a random scene.");
+            GoToRandomScene(sceneSettings.GetMaxSceneID());
         }
     }
 
-    void Update()
+    // ランダムで次のシーンに進む処理
+    private void GoToRandomScene(int maxSceneID)
     {
+        int currentSceneID = sceneManagerScript.GetSceneID();
+        int nextSceneID;
+
+        do
+        {
+            nextSceneID = UnityEngine.Random.Range(1, maxSceneID + 1);
+        } while (nextSceneID == currentSceneID);
+
+        Debug.Log("Randomly transitioning to Scene_" + nextSceneID);
+        SceneManager.LoadScene("Scene_" + nextSceneID);
     }
 }
