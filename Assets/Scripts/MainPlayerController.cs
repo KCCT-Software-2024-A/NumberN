@@ -10,7 +10,7 @@ public class MainPlayerController : MonoBehaviour
     public float rotationSpeed = 90f; // 回転速度
     public float moveSpeed = 0.1f; // 移動速度
     public float mouseSensitivity = 100f; // マウス感度
-    float xRotation = 0f; // X軸の回転角度
+    //float xRotation = 0f; // X軸の回転角度
 
     void FixedUpdate ()
     {

@@ -12,7 +12,8 @@ public class SceneManagerScript : MonoBehaviour
 
     void Start()
     {
-
+        // sceneIDがエディタから設定されている場合は、そのまま使用
+        Debug.Log("Scene ID: " + sceneID);
     }
 
     // シーンIDを取得する
