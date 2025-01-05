@@ -1,10 +1,10 @@
 using UnityEngine;
-using TMPro;  // TextMeshProを使用するためにインポート
+using UnityEngine.UI;  // Unityの標準UIを使用するためにインポート
 
 public class SceneProgressDisplay : MonoBehaviour
 {
-    // TextMeshProUGUI型を使用
-    [SerializeField] private TextMeshProUGUI progressText;
+    // Text型を使用
+    [SerializeField] private Text progressText;
 
     private SceneSettings sceneSettings;
 
