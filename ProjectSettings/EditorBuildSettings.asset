@@ -1,14 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!1045 &1
-EditorBuildSettings:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Sci Fi Modular Pack/Scenes/scene_0.unity
-    guid: 8b702e4055199004a9a379262ac8b24d
-  - enabled: 1
-    path: Assets/Sci Fi Modular Pack/Scenes/scene_1.unity
-    guid: d63274009dc48be489fab6ebc7cf4823
-  m_configObjects: {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f57d69269fc37bff662ffc3cfbea7ca92c54e205e4295b17422f8c05462da4db
+size 971
