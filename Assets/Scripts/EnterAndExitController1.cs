@@ -7,10 +7,11 @@ public class EnterAndExitController1 : MonoBehaviour
     // 出口か入口かを判別するフラグ
     [SerializeField] public bool is_exit = false;
 
+    // エンディングシーンかどうかを判別するフラグ
+    [SerializeField] public bool isEndingScene = false;
+
     // SceneManagerScriptの参照
     private SceneManagerScript sceneManagerScript;
-    
-    // SceneSettingsの参照
     private SceneSettings sceneSettings;
 
     private void Start()
@@ -18,32 +19,71 @@ public class EnterAndExitController1 : MonoBehaviour
         // SceneManagerScriptとSceneSettingsのインスタンスを取得
         sceneManagerScript = FindObjectOfType<SceneManagerScript>();
         sceneSettings = FindObjectOfType<SceneSettings>();
-        Debug.Log("EnterAndExitController1 initialized.");
+
+        if (sceneManagerScript == null || sceneSettings == null)
+        {
+            Debug.LogError("SceneManagerScriptまたはSceneSettingsが見つかりません。");
+        }
+        else
+        {
+            Debug.Log("EnterAndExitController1 initialized.");
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        // プレイヤー以外の接触や必要コンポーネントの未設定時は処理を終了
-        if (!other.CompareTag("Player") || sceneManagerScript == null || sceneSettings == null)
+        Debug.Log($"Trigger entered by: {other.name}");
+
+        // プレイヤー以外の接触、または必要なコンポーネントが未設定の場合、処理を中断
+        if (!other.CompareTag("Player"))
         {
-            Debug.LogWarning("Invalid trigger detected or missing components.");
+            Debug.LogWarning("Trigger entered by non-Player object.");
+            return;
+        }
+        if (sceneManagerScript == null || sceneSettings == null)
+        {
+            Debug.LogError("SceneManagerScriptまたはSceneSettingsが未設定です。");
             return;
         }
 
         Debug.Log("Player entered trigger zone.");
 
-        // シーン進行カウントをインクリメント
+        // シーン進行カウントを増加
         SceneSettings.scenesProgressed++;
         Debug.Log("Scenes progressed: " + SceneSettings.scenesProgressed);
 
-        // エンディングへ進む条件を満たしているか確認
+        // isEndingSceneの条件に基づいて遷移先を決定
+        if (isEndingScene)
+        {
+            SceneSettings.scenesProgressed = 0;
+            if (is_exit)
+            {
+                // isEndingSceneがtrueで、is_exitがtrueの場合、シーン0へ
+                Debug.Log("Ending scene with exit. Transitioning to Scene 0.");
+                SceneManager.LoadScene("Scene_0");
+            }
+            else
+            {
+                // isEndingSceneがtrueで、is_exitがfalseの場合、クリアシーンに遷移
+                Debug.Log("Ending scene without exit. Transitioning to Clear Scene.");
+                SceneManager.LoadScene("ClearScene");
+            }
+            return;
+        }
+
+        // エンディング条件の確認
         if (SceneSettings.scenesProgressed >= sceneSettings.GetRequiredScenesToAdvance())
         {
+            Debug.Log("Checking ending conditions...");
             if ((is_exit && !sceneManagerScript.CheckAnomaly()) || (!is_exit && sceneManagerScript.CheckAnomaly()))
             {
                 Debug.Log("Advancing to EndingScene.");
                 SceneManager.LoadScene("EndingScene");
                 return;
+            }
+            else
+            {
+                Debug.Log("Not advancing to EndingScene: Conditions not met.");
             }
         }
 
@@ -51,33 +91,52 @@ public class EnterAndExitController1 : MonoBehaviour
         bool hasAnomaly = sceneManagerScript.CheckAnomaly();
         Debug.Log("Anomaly detected: " + hasAnomaly);
 
-        // 条件に基づきシーン遷移を制御
+        // 出口かつ異変あり、または入口かつ異変なしの場合のシーン遷移制御
+        int nextSceneID;
+
         if ((is_exit && hasAnomaly) || (!is_exit && !hasAnomaly))
         {
-            int nextSceneID = (sceneManagerScript.GetSceneID() == 0) ? sceneSettings.GetRandomSceneID() : 0;
+            Debug.Log("Conditions met for controlled scene transition.");
+            SceneSettings.scenesProgressed = 0;
+            if (sceneManagerScript.GetSceneID() == 0)
+            {
+                // IDが0の場合は1以上のランダムシーンへ
+                nextSceneID = UnityEngine.Random.Range(1, sceneSettings.GetMaxSceneID() + 1);
+                Debug.Log("SceneID is 0. Transitioning to a random scene ID: " + nextSceneID);
+            }
+            else
+            {
+                // IDが0でない場合はID0に戻る
+                nextSceneID = 0;
+                Debug.Log("SceneID is not 0. Returning to Scene 0.");
+            }
+
             Debug.Log("Transitioning to Scene_" + nextSceneID);
             SceneManager.LoadScene("Scene_" + nextSceneID);
-            SceneSettings.scenesProgressed = 0;
         }
         else
         {
-            Debug.Log("Transitioning to a random scene.");
+            // それ以外の場合はランダムシーンへ遷移
+            Debug.Log("Conditions not met for controlled transition. Transitioning to a random scene.");
             GoToRandomScene(sceneSettings.GetMaxSceneID());
         }
     }
 
-    // ランダムで次のシーンに進む処理
+    // 現在のシーン以外のランダムシーンへ移動する処理
     private void GoToRandomScene(int maxSceneID)
     {
         int currentSceneID = sceneManagerScript.GetSceneID();
         int nextSceneID;
 
+        Debug.Log("Starting random scene transition. Current scene ID: " + currentSceneID);
+
         do
         {
             nextSceneID = UnityEngine.Random.Range(1, maxSceneID + 1);
+            Debug.Log("Randomly selected scene ID: " + nextSceneID);
         } while (nextSceneID == currentSceneID);
 
-        Debug.Log("Randomly transitioning to Scene_" + nextSceneID);
+        Debug.Log("Transitioning to Random Scene_" + nextSceneID);
         SceneManager.LoadScene("Scene_" + nextSceneID);
     }
 }
