@@ -28,7 +28,7 @@ public class SceneProgressDisplay : MonoBehaviour
     {
         if (sceneSettings != null)
         {
-            progressText.text = $"{SceneSettings.scenesProgressed} / {sceneSettings.GetMaxSceneID()+1}";
+            progressText.text = $"{SceneSettings.scenesProgressed} / {sceneSettings.GetRequiredScenesToAdvance()+1}";
         }
     }
 }
