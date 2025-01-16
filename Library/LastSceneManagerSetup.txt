@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Sci Fi Modular Pack/Scenes/scene_2.unity
+- path: Assets/Sci Fi Modular Pack/Scenes/scene_5.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

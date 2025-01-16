@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311935, g: 0.38074002, b: 0.3587273, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19335,7 +19335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSceneID: 10
-  requiredScenesToAdvance: 5
+  requiredScenesToAdvance: 30
 --- !u!4 &827511552
 Transform:
   m_ObjectHideFlags: 0
@@ -30612,7 +30612,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.4448202, g: 0.5742803, b: 0.7924528, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 7
   m_SpotAngle: 30
@@ -30676,7 +30676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 87047866}
-  offset: {x: 0, y: 0.3, z: 0}
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1249847350
 GameObject:
   m_ObjectHideFlags: 0
