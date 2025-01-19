@@ -19,7 +19,11 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title: "\u30B7\u30FC\u30F3"
+=======
+  m_Title: Scene
+>>>>>>> be5ab3f6 (add trigger cube)
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +123,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 7074
+=======
+  controlID: 28
+>>>>>>> be5ab3f6 (add trigger cube)
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +152,11 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 7075
+=======
+  controlID: 29
+>>>>>>> be5ab3f6 (add trigger cube)
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,12 +176,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1497
     height: 551
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
   controlID: 7076
+=======
+    width: 1388.5
+    height: 595.5
+  m_MinSize: {x: 200, y: 50}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 30
+>>>>>>> be5ab3f6 (add trigger cube)
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,8 +208,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 370
     height: 551
+=======
+    width: 342
+    height: 595.5
+>>>>>>> be5ab3f6 (add trigger cube)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
@@ -213,8 +239,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 370
     y: 0
+<<<<<<< HEAD
     width: 1127
     height: 551
+=======
+    width: 1046.5
+    height: 595.5
+>>>>>>> be5ab3f6 (add trigger cube)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
@@ -240,9 +271,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 551
     width: 1497
     height: 396
+=======
+    y: 595.5
+    width: 1388.5
+    height: 427.5
+>>>>>>> be5ab3f6 (add trigger cube)
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 16}
@@ -268,8 +305,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1497
     y: 0
+<<<<<<< HEAD
     width: 423
     height: 947
+=======
+    width: 387.5
+    height: 1023
+>>>>>>> be5ab3f6 (add trigger cube)
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
@@ -297,10 +339,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 371
     y: 19
     width: 1125
     height: 530
+=======
+    x: 354
+    y: 114
+    width: 1044.5
+    height: 575.5
+>>>>>>> be5ab3f6 (add trigger cube)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -317,7 +366,11 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
   m_TargetSize: {x: 1125, y: 509}
+=======
+  m_TargetSize: {x: 1044.5, y: 554.5}
+>>>>>>> be5ab3f6 (add trigger cube)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -332,10 +385,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -562.5
     m_HBaseRangeMax: 562.5
     m_VBaseRangeMin: -254.5
     m_VBaseRangeMax: 254.5
+=======
+    m_HBaseRangeMin: -261.125
+    m_HBaseRangeMax: 261.125
+    m_VBaseRangeMin: -138.625
+    m_VBaseRangeMax: 138.625
+>>>>>>> be5ab3f6 (add trigger cube)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -344,7 +404,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -353,16 +413,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 1125
       height: 509
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 562.5, y: 254.5}
+=======
+      width: 1044.5
+      height: 554.5
+    m_Scale: {x: 2, y: 2}
+    m_Translation: {x: 522.25, y: 277.25}
+>>>>>>> be5ab3f6 (add trigger cube)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -562.5
       y: -254.5
       width: 1125
@@ -370,6 +438,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1125, y: 530}
+=======
+      x: -261.125
+      y: -138.625
+      width: 522.25
+      height: 277.25
+    m_MinimalGUI: 1
+  m_defaultScale: 2
+  m_LastWindowPixelSize: {x: 2089, y: 1151}
+>>>>>>> be5ab3f6 (add trigger cube)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -395,10 +472,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 73
     width: 369
     height: 530
+=======
+    x: 12
+    y: 114
+    width: 341
+    height: 574.5
+>>>>>>> be5ab3f6 (add trigger cube)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -411,10 +495,17 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 86faf8ffcc05f9ff8614f9ffd01bf9ff1627f9ff6632f9ffac3df9fffc48f9ffca85f9ff3c91f9ff809cf9ffc6a7f9ff16b3f9ff8cbef9ff08cbf9ff4ed6f9ff94e1f9fffaecf9ffb8f8f9ff3205faff8410faffd61bfaffb827faffca35faff9044fafffe4ffaff065cfaff5867faffa872fafffa7dfaffae89faff2c99faffc6b0faff0cbcfaff9ec7faff88d4fafff4dffaffeaebfaff54f7faffc802fbff1a0efbff6c19fbffbe24fbff3230fbff843bfbffd646fbff1a52fbffb85dfbffba6bfbfffe76fbff5082fbff948dfbffe698fbff38a4fbff8aaffbffdcbafbff50c6fbffacd1fbffc2dcfbff1ee8fbff92f3fbffeefefbff0c0afcffe816fcffd022fcff222efcff7439fcffd044fcff5250fcffb45ffcff8a6bfcff1c78fcff2a83fcff6c8efcffb499fcff32a5fcff3eb1fcffe2bcfcff20cdfcff76d9fcff36e5fcff96f1fcfff2fdfcff4c0afdff6616fdffb622fdff502efdffd43afdff5e47fdffcc53fdff3a60fdffc66cfdff8679fdff8285fdff9491fdff789dfdff46a9fdff74b5fdff8ec1fdff54cdfdff60d9fdff6ae5fdffd0f1fdff50fefdff260bfeff121bfeff2628feff6c33feffd83efeff284afeff3255feff7060feffb46bfefffa76feff5a84feffc28ffeff089bfeffc6a9feff10b5feff78c0feffbecbfeff04d7feff6ce2feffe8edfeff62fafeffa805ffff1011ffff561cffffbe27ffff0833ffff4c3effff9649fffffe54ffff4460ffffac6bffff0a77ffff5082ffffb88dfffffe98ffff9aa4ffff9eb0ffff22b8ffff8ec3fffffeceffff4cdaffff7ee9ffff30fbffff0243020020340400dc000600e40106009a04060086060600bc060600
+=======
+      scrollPos: {x: 0, y: 48}
+      m_SelectedIDs: e4bdfcff
+      m_LastClickedID: -213532
+      m_ExpandedIDs: 4c97fdff66b0fdff52acffff54acffffaeadffffcaadffffdaadfffff2adffff2caeffff7caeffff98aeffff04affffff0f4fffff4f4ffff68f5ffffb0f5ffffb4f5ffff56f6ffff5af6ffff86f6ffff8af6ffff7ef7ffff82f7ffff20f8ffffacf8ffffb0f8ffff82fafffff6fafffff45900001a5a0000725a0000865a0000965a0000ac5a0000c45a0000d45a00008a5b0000225c00004c5c0000a85c0000bc5c0000e05c0000425d00008e5d0000b65d0000d05d0000fc5d00001e5e0000b45e00002c5f00004c5f0000745f00007c5f0000c45f0000ea5f000016600000266000004c600000626000007e600000b4600000fe6000005a61000090610000c2610000
+>>>>>>> be5ab3f6 (add trigger cube)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -430,7 +521,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 8}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -458,10 +549,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 370
     y: 73
     width: 1125
     height: 530
+=======
+    x: 354
+    y: 114
+    width: 1044.5
+    height: 574.5
+>>>>>>> be5ab3f6 (add trigger cube)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -820,9 +918,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -9.806669, y: -0.36780918, z: 5.6839128}
     speed: 2
     m_Value: {x: -9.806669, y: -0.36780918, z: 5.6839128}
+=======
+    m_Target: {x: -5.0417466, y: -0.07336445, z: -6.009304}
+    speed: 2
+    m_Value: {x: -5.0417466, y: -0.07336445, z: -6.009304}
+>>>>>>> be5ab3f6 (add trigger cube)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -868,6 +972,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.030939886, y: -0.71000254, z: 0.031837612, w: 0.7030802}
     speed: 2
     m_Value: {x: 0.03203702, y: -0.7087582, z: 0.03284846, w: 0.7039577}
@@ -875,6 +980,15 @@ MonoBehaviour:
     m_Target: 5.9176173
     speed: 2
     m_Value: 5.6627917
+=======
+    m_Target: {x: 0.012988676, y: -0.6653243, z: 0.011576489, w: 0.74635965}
+    speed: 2
+    m_Value: {x: 0.012988599, y: -0.6653203, z: 0.01157642, w: 0.7463552}
+  m_Size:
+    m_Target: 2.8510947
+    speed: 2
+    m_Value: 2.8510947
+>>>>>>> be5ab3f6 (add trigger cube)
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -989,10 +1103,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 624
     width: 1496
     height: 375
+=======
+    x: 12
+    y: 709.5
+    width: 1387.5
+    height: 406.5
+>>>>>>> be5ab3f6 (add trigger cube)
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1028,10 +1149,17 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 577}
     m_SelectedIDs: 42730000
     m_LastClickedID: 29506
     m_ExpandedIDs: 000000003471000036710000387100003a7100003c7100003e71000040710000427100004471000046710000487100004a7100004c7100004e71000050710000527100005471000056710000587100005a7100005c71000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 8c680000
+    m_LastClickedID: 26764
+    m_ExpandedIDs: 000000002c6700002e67000000ca9a3bffffff7f
+>>>>>>> be5ab3f6 (add trigger cube)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1059,7 +1187,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000003471000036710000387100003a7100003c7100003e71000040710000427100004471000046710000487100004a7100004c7100004e71000050710000527100005471000056710000587100005a7100005c71000000ca9a3b
+=======
+    m_ExpandedIDs: 000000002c6700002e670000
+>>>>>>> be5ab3f6 (add trigger cube)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1103,7 +1235,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
