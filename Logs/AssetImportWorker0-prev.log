@@ -15,7 +15,7 @@ D:/Unity/チュートリアル/NumberN
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51971
+50885
 Successfully changed project path to: D:/Unity/チュートリアル/NumberN
 D:/Unity/チュートリアル/NumberN
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ D:/Unity/チュートリアル/NumberN
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19512] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 244905873 [EditorId] 244905873 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AN7S338) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [7724] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 3209821640 [EditorId] 3209821640 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AN7S338) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19512] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 244905873 [EditorId] 244905873 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AN7S338) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [7724] Host "[IP] 192.168.1.13 [Port] 0 [Flags] 2 [Guid] 3209821640 [EditorId] 3209821640 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AN7S338) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
-Refreshing native plugins compatible for Editor in 6.91 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 6.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.21f1 (bf09ca542b87)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56796
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012677 seconds.
-- Loaded All Assemblies, in  0.412 seconds
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.011194 seconds.
+- Loaded All Assemblies, in  0.400 seconds
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.323 seconds
-Domain Reload Profiling: 733ms
+- Finished resetting the current domain, in  0.328 seconds
+Domain Reload Profiling: 726ms
 	BeginReloadAssembly (130ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (39ms)
+	RebuildCommonClasses (38ms)
 	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (77ms)
-	LoadAllAssembliesAndSetupDomain (151ms)
-		LoadAssemblies (127ms)
+	initialDomainReloadingComplete (69ms)
+	LoadAllAssembliesAndSetupDomain (148ms)
+		LoadAssemblies (128ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (149ms)
-			TypeCache.Refresh (147ms)
-				TypeCache.ScanAssembly (132ms)
+		AnalyzeDomain (145ms)
+			TypeCache.Refresh (144ms)
+				TypeCache.ScanAssembly (129ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (324ms)
+	FinalizeReload (329ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (256ms)
+		SetupLoadedEditorAssemblies (265ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (176ms)
-			ProcessInitializeOnLoadMethodAttributes (56ms)
+			ProcessInitializeOnLoadAttributes (185ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,51 +117,52 @@ Domain Reload Profiling: 733ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.681 seconds
-Refreshing native plugins compatible for Editor in 2.50 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.635 seconds
+Refreshing native plugins compatible for Editor in 2.28 ms, found 3 plugins.
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.704 seconds
-Domain Reload Profiling: 1383ms
-	BeginReloadAssembly (160ms)
+- Finished resetting the current domain, in  0.686 seconds
+Domain Reload Profiling: 1319ms
+	BeginReloadAssembly (146ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (416ms)
-		LoadAssemblies (306ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (392ms)
+		LoadAssemblies (284ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (199ms)
-			TypeCache.Refresh (176ms)
-				TypeCache.ScanAssembly (159ms)
-			ScanForSourceGeneratedMonoScriptInfo (17ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (705ms)
+		AnalyzeDomain (192ms)
+			TypeCache.Refresh (169ms)
+				TypeCache.ScanAssembly (153ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (687ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (533ms)
+		SetupLoadedEditorAssemblies (514ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (66ms)
-			ProcessInitializeOnLoadAttributes (419ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
-			AfterProcessingInitializeOnLoad (11ms)
+			BeforeProcessingInitializeOnLoad (61ms)
+			ProcessInitializeOnLoadAttributes (407ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 2.20 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.29 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3105 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (57.4 KB). Loaded Objects now: 3568.
-Memory consumption went from 122.1 MB to 122.1 MB.
-Total: 3.562200 ms (FindLiveObjects: 0.440800 ms CreateObjectMapping: 0.108800 ms MarkObjects: 2.875500 ms  DeleteObjects: 0.135800 ms)
+Unloading 3280 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (57.5 KB). Loaded Objects now: 3743.
+Memory consumption went from 163.4 MB to 163.3 MB.
+Total: 3.427900 ms (FindLiveObjects: 0.489000 ms CreateObjectMapping: 0.114400 ms MarkObjects: 2.699300 ms  DeleteObjects: 0.124100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -176,9 +179,433 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 11292.955154 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a85bec50c8be757587fedfaade313866') in 0.004235 seconds
+  Time since last request: 2732.522042 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_0.unity
+  artifactKey: Guid(cb8a077b14d09f34c81c9666a81e64a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_0.unity using Guid(cb8a077b14d09f34c81c9666a81e64a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27d9daa63b012ab5194f736cba0d4621') in 0.002505 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 38.288800 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes
+  artifactKey: Guid(c59c3118e6a294ef5983e5384a4b708e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes using Guid(c59c3118e6a294ef5983e5384a4b708e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04f6c3581d297688cbd58f89dcde3af6') in 0.000458 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.838088 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/aaaa.mat
+  artifactKey: Guid(f676e87b1e9d1774f8d908d63473e540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/aaaa.mat using Guid(f676e87b1e9d1774f8d908d63473e540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa4d3951130cf764801dabeaca43155') in 0.271721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 213.363798 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/aaaa.mat
+  artifactKey: Guid(f676e87b1e9d1774f8d908d63473e540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/aaaa.mat using Guid(f676e87b1e9d1774f8d908d63473e540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae5c6c1bd4ee065ae7569ab1bad8f5c1') in 0.157736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 15.961042 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_1.unity
+  artifactKey: Guid(056ee60ab424bd14eb63d88589feaad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_1.unity using Guid(056ee60ab424bd14eb63d88589feaad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a17e16ac91c9119710c32bb1f08f49') in 0.000531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 40.227550 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_2.unity
+  artifactKey: Guid(1c16cca6d2cc31848b109bee8952a1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_2.unity using Guid(1c16cca6d2cc31848b109bee8952a1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10dab318598e508135f9e9867df522ef') in 0.000531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 29.383329 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_3.unity
+  artifactKey: Guid(d89addf63825926439a7d5ef4aa5117f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_3.unity using Guid(d89addf63825926439a7d5ef4aa5117f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77c8337f4780db27a4cf2f290c0be681') in 0.000497 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.650917 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/original.unity
+  artifactKey: Guid(b8fcc92eb48f13046a3c6e0eb430b04a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/original.unity using Guid(b8fcc92eb48f13046a3c6e0eb430b04a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75c89e5e9c94c25cfc9574972b4b44f5') in 0.000463 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.733578 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_0.unity
+  artifactKey: Guid(cb8a077b14d09f34c81c9666a81e64a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_0.unity using Guid(cb8a077b14d09f34c81c9666a81e64a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3d6480a3a1258706decf26c3bc6a997') in 0.000492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.567948 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_1.unity
+  artifactKey: Guid(056ee60ab424bd14eb63d88589feaad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_1.unity using Guid(056ee60ab424bd14eb63d88589feaad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '418538efe4d7a1c0760c6def980fd1df') in 0.000483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.756230 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_2.unity
+  artifactKey: Guid(1c16cca6d2cc31848b109bee8952a1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_2.unity using Guid(1c16cca6d2cc31848b109bee8952a1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66c926631499e15f4425abd2596aa850') in 0.000483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.118620 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_4.unity
+  artifactKey: Guid(3703f18b729fc66429e59dd5279d742d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_4.unity using Guid(3703f18b729fc66429e59dd5279d742d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7abc2f4fd6f1dbbe50ef751bd1e84c96') in 0.000494 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.576252 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_5.unity
+  artifactKey: Guid(8c163fb4919788a4a9408c43a3575de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_5.unity using Guid(8c163fb4919788a4a9408c43a3575de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '377f96235ad90d9b940d2d51b8ca560f') in 0.000469 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.580732 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_6.unity
+  artifactKey: Guid(9266676abbf917142b630c589839bbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_6.unity using Guid(9266676abbf917142b630c589839bbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c9988d7ce2c605925b3f4fc02464a84') in 0.000509 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.521207 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_7.unity
+  artifactKey: Guid(025a2206b4d38874a963e36c489e4859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_7.unity using Guid(025a2206b4d38874a963e36c489e4859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6e894b29bdc750efdcdba7a311bb827') in 0.000500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.531154 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_8.unity
+  artifactKey: Guid(f5a8b02bb027cf34b8e9700de8a72696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_8.unity using Guid(f5a8b02bb027cf34b8e9700de8a72696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5f6b520ef580c9cd905cdbc9c317832') in 0.000501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.512773 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_9.unity
+  artifactKey: Guid(17a95afdf69e7904da0d03a4247bc0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_9.unity using Guid(17a95afdf69e7904da0d03a4247bc0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca1d2331720e0914dfff9f241cf99e97') in 0.000487 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.008908 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_14.unity
+  artifactKey: Guid(3d6c90872e018d9418de6c4a9811ad27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_14.unity using Guid(3d6c90872e018d9418de6c4a9811ad27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd476b67f4b5d14e67e4aa5e1007c8284') in 0.000485 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.590680 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_13.unity
+  artifactKey: Guid(05e758fbc7017204497b578ea21aa9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_13.unity using Guid(05e758fbc7017204497b578ea21aa9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a089dacf5cb06956bb6ba4e511b32a') in 0.000479 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.971568 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_12.unity
+  artifactKey: Guid(6932119ed3d58bd4cbdc329e264d5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_12.unity using Guid(6932119ed3d58bd4cbdc329e264d5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd173223b539d7c4310e9511e6aa863ba') in 0.000495 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.683157 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_11.unity
+  artifactKey: Guid(f09237264c34bf34f9f58d984a0903ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_11.unity using Guid(f09237264c34bf34f9f58d984a0903ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe34fcf1314830876c9f345754b1bef') in 0.000486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.701323 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_10.unity
+  artifactKey: Guid(3cac0a2365b247f42ab9b07c418be12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_10.unity using Guid(3cac0a2365b247f42ab9b07c418be12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc09f13d37e7d2a04a1ec33897ba4de') in 0.000486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 70.967423 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_3.unity
+  artifactKey: Guid(d89addf63825926439a7d5ef4aa5117f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_3.unity using Guid(d89addf63825926439a7d5ef4aa5117f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a000b51c0179a4a5ad6f6208a650ffff') in 0.000513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 349.837884 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_4.unity
+  artifactKey: Guid(3703f18b729fc66429e59dd5279d742d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_4.unity using Guid(3703f18b729fc66429e59dd5279d742d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ebde75b9aa2ba51c9236d86d00f2aa2') in 0.000558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.548963 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_5.unity
+  artifactKey: Guid(8c163fb4919788a4a9408c43a3575de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_5.unity using Guid(8c163fb4919788a4a9408c43a3575de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbfb6f1f0cb271c4f5b646e28fead14d') in 0.000496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.917544 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_6.unity
+  artifactKey: Guid(9266676abbf917142b630c589839bbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_6.unity using Guid(9266676abbf917142b630c589839bbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee8073aa84f954458d11e4520cf4d53a') in 0.000605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.504840 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_7.unity
+  artifactKey: Guid(025a2206b4d38874a963e36c489e4859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_7.unity using Guid(025a2206b4d38874a963e36c489e4859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd39842f6e694cfc7f002ebc4d5117680') in 0.000522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.493371 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_8.unity
+  artifactKey: Guid(f5a8b02bb027cf34b8e9700de8a72696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_8.unity using Guid(f5a8b02bb027cf34b8e9700de8a72696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b299f861ec28a306a2e936a8df5a12') in 0.000680 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.728271 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_9.unity
+  artifactKey: Guid(17a95afdf69e7904da0d03a4247bc0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_9.unity using Guid(17a95afdf69e7904da0d03a4247bc0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c15717f76b133d8d8805abb0776ec074') in 0.000515 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.498 seconds
+Refreshing native plugins compatible for Editor in 2.30 ms, found 3 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.989 seconds
+Domain Reload Profiling: 1484ms
+	BeginReloadAssembly (165ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (248ms)
+		LoadAssemblies (327ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (989ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (547ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (418ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 3.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3181 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (31.2 KB). Loaded Objects now: 3787.
+Memory consumption went from 146.5 MB to 146.5 MB.
+Total: 4.174800 ms (FindLiveObjects: 0.525800 ms CreateObjectMapping: 0.137200 ms MarkObjects: 3.428800 ms  DeleteObjects: 0.081100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 49.392749 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/ClearScene.unity
+  artifactKey: Guid(f8bf51df95888d947806fd2ae1bc654b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/ClearScene.unity using Guid(f8bf51df95888d947806fd2ae1bc654b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c4ae5d75dc600d398e1d4d9dcb28efb') in 0.007833 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.422927 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/EndingScene.unity
+  artifactKey: Guid(7fea3786181145d40ba035ce6feef4f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/EndingScene.unity using Guid(7fea3786181145d40ba035ce6feef4f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b799f13b3c0d459c00a9c846fd701857') in 0.000552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.370220 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/original.unity
+  artifactKey: Guid(b8fcc92eb48f13046a3c6e0eb430b04a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/original.unity using Guid(b8fcc92eb48f13046a3c6e0eb430b04a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36b43c85b44cfcc5b59c135db9c48ce') in 0.004746 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 113.400974 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_10.unity
+  artifactKey: Guid(3cac0a2365b247f42ab9b07c418be12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_10.unity using Guid(3cac0a2365b247f42ab9b07c418be12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ed045c6179c0508bd4989371c9e019') in 0.000514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.111939 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_11.unity
+  artifactKey: Guid(f09237264c34bf34f9f58d984a0903ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_11.unity using Guid(f09237264c34bf34f9f58d984a0903ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1925e2dd4953bee416b5ec26c889f8d2') in 0.000514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.730779 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_12.unity
+  artifactKey: Guid(6932119ed3d58bd4cbdc329e264d5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_12.unity using Guid(6932119ed3d58bd4cbdc329e264d5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c389ca39f29ac172c7295d5e5eb506c') in 0.000487 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.513742 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_13.unity
+  artifactKey: Guid(05e758fbc7017204497b578ea21aa9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_13.unity using Guid(05e758fbc7017204497b578ea21aa9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e5146b1db11ed06bef0e59efd7967a1') in 0.000514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 106.750862 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_1.unity
+  artifactKey: Guid(056ee60ab424bd14eb63d88589feaad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_1.unity using Guid(056ee60ab424bd14eb63d88589feaad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f2febffe5c692004f48007030ae89cd') in 0.000567 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.907080 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_2.unity
+  artifactKey: Guid(1c16cca6d2cc31848b109bee8952a1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_2.unity using Guid(1c16cca6d2cc31848b109bee8952a1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e856040cc65e31756c204eae9eb94830') in 0.000501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.576492 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_3.unity
+  artifactKey: Guid(d89addf63825926439a7d5ef4aa5117f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_3.unity using Guid(d89addf63825926439a7d5ef4aa5117f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baf8ee8d0f773f9a6c6fea0bc46d9e88') in 0.000533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.533458 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_4.unity
+  artifactKey: Guid(3703f18b729fc66429e59dd5279d742d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_4.unity using Guid(3703f18b729fc66429e59dd5279d742d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1d91dc363bae808a557459c9a5211c5') in 0.000510 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.694753 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_5.unity
+  artifactKey: Guid(8c163fb4919788a4a9408c43a3575de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_5.unity using Guid(8c163fb4919788a4a9408c43a3575de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c59d3529893e06acf10e4375484ea3') in 0.000948 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 21.805777 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_4.unity
+  artifactKey: Guid(3703f18b729fc66429e59dd5279d742d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_4.unity using Guid(3703f18b729fc66429e59dd5279d742d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba3baa16132223c1e89017b02e10ade0') in 0.000541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.766589 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_6.unity
+  artifactKey: Guid(9266676abbf917142b630c589839bbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_6.unity using Guid(9266676abbf917142b630c589839bbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fa1d13a68e59e9958c1be9ae5d479e8') in 0.000525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.525065 seconds.
+  path: Assets/Sci Fi Modular Pack/Scenes/scene_7.unity
+  artifactKey: Guid(025a2206b4d38874a963e36c489e4859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sci Fi Modular Pack/Scenes/scene_7.unity using Guid(025a2206b4d38874a963e36c489e4859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c79ba847fde6d7255bcc1dd6820cfb8') in 0.000517 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 236.306121 seconds.
+  path: Assets/Scenes/TransparentMaterial.mat
+  artifactKey: Guid(e5a44e30eb81a41f5adf9f10a4d8666c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TransparentMaterial.mat using Guid(e5a44e30eb81a41f5adf9f10a4d8666c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The file 'Assets/Scenes/TransparentMaterial.mat' seems to have merge conflicts. Please open it in a text editor and fix the merge.
+ -> (artifact id: 'bab56e328321fa40fdbe23d5019fe8d8') in 0.001270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 54.450132 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(8a168e78b58aa874ea2d73f5de4f422a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(8a168e78b58aa874ea2d73f5de4f422a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cda553081ec93d4d95d65257c7d87b1') in 0.000492 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
